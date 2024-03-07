@@ -17,6 +17,6 @@ Go step by step using the application. You will be prompted with the banner code
 at the end which you can copy and paste into your website.
 
 -   As there was no instruction if the code that needed to be copied should be
-    iframed, scripted or similar. I provided the basic <div> wrapped code.
+    iframed, scripted or similar. I provided the basic "div" wrapped code.
 
 For any question you can contact me via email: `antonije.ljubisa@gmail.com`
