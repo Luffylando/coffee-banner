@@ -83,14 +83,14 @@ const StepThree = ({ toggleModal, activeStep, isDisabled }: TStepThree) => {
                             iconRight={StartOverIcon}
                             variant="secondary"
                             className="font-bold border-none !p-[0px]"
-                            onClick={() => handleStartOver}>
+                            onClick={handleStartOver}>
                             Start over
                         </Button>
                         <Button
                             iconLeft={CopyIcon}
                             className="font-semibold"
                             variant="primary"
-                            onClick={() => handleOpenModal}>
+                            onClick={handleOpenModal}>
                             View and copy code
                         </Button>
                     </div>

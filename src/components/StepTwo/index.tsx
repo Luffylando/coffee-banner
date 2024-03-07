@@ -23,7 +23,6 @@ const StepTwo = ({ activeStep, isDisabled }: TStepTwo) => {
         activeStepTwo !== "300px" &&
         activeStepTwo !== "100%";
 
-    console.log("tt", activeStepTwo);
     return (
         <div
             className={`${

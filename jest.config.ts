@@ -6,6 +6,7 @@ export default async (): Promise<Config> => {
         // testEnvironment: "jsdom",
         preset: "ts-jest",
         testEnvironment: "jest-environment-jsdom",
+        setupFilesAfterEnv: ["<rootDir>/jest-setup.ts"],
         transform: {
             "^.+\\.tsx?$": "ts-jest"
             // process `*.tsx` files with `ts-jest`
