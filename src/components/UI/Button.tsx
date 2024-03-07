@@ -8,6 +8,7 @@ type TButton = {
     className?: string;
     iconLeft?: ElementType;
     iconRight?: ElementType;
+    disabled?: boolean;
 };
 
 const Button = ({
@@ -15,6 +16,7 @@ const Button = ({
     onClick,
     variant,
     className,
+    disabled,
     iconRight: IconRight,
     iconLeft: IconLeft,
     ...rest
@@ -23,7 +25,10 @@ const Button = ({
         case "primary":
             return (
                 <button
-                    className={`rounded-md bg-bluePrimary px-[30px] py-[12px] text-white transition-all font-medium ${className}`}
+                    disabled={disabled}
+                    className={`rounded-md bg-bluePrimary px-[30px] py-[12px] text-white transition-all font-medium ${
+                        disabled && "bg-greySecondary"
+                    } ${className}`}
                     onClick={onClick}
                     {...rest}>
                     <div className="flex justify-center items-center text-center w-full">
