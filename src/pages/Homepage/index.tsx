@@ -1,14 +1,16 @@
 import { useEffect, useRef, useState } from "react";
-
-import StepOne from "@/components/StepOne";
-import StepTwo from "@/components/StepTwo";
-import StepThree from "@/components/StepThree";
-import PreviewCoffee from "@/components/Preview";
-import Modal from "@/components/Modal";
-import Button from "@/components/UI/Button";
-import CopyIcon from "@assets/icons/copy-icon.svg?react";
-import { useStepsStore } from "@/store/store";
 import { CopyToClipboard } from "react-copy-to-clipboard";
+
+import StepOne from "../../components/StepOne";
+import StepTwo from "../../components/StepTwo";
+import StepThree from "../..//components/StepThree";
+import PreviewCoffee from "../..//components/Preview";
+import Modal from "../..//components/Modal";
+import Button from "../..//components/UI/Button";
+
+import CopyIcon from "../../assets/icons/copy-icon.svg?react";
+
+import { useStepsStore } from "../../store/store";
 
 const Homepage = () => {
     const { bannerCode } = useStepsStore();
@@ -49,8 +51,8 @@ const Homepage = () => {
                     preview update as you go. Then view, copy and paste.
                 </p>
             </div>
-            <div className="flex justify-between mt-[40px]">
-                <div className="flex flex-col gap-y-[36px]">
+            <div className="flex justify-between mt-[40px] gap-x-[20px] flex-col 2xl:flex-row">
+                <div className="flex flex-col gap-y-[36px] max-w-full">
                     <StepOne
                         // stepOneData={stepOneData}
                         activeStep={activeStep}
