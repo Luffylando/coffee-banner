@@ -1,5 +1,6 @@
 export const toCamelCase = (str: string) => {
     return str
+        .toLowerCase()
         .replace(/\s(.)/g, function (match) {
             return match.toUpperCase();
         })
