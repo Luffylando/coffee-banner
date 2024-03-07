@@ -1,30 +1,22 @@
-# React + TypeScript + Vite
+# ThinkIT Coffee Banner.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+To run the project follow instructions below (im using yarn):
 
-Currently, two official plugins are available:
+1. Clone the repository.
+2. Go into the repo on your machine.
+3. Run: `yarn` to install the dependencies.
+4. Run: `yarn dev` to start the project on your machine.
+5. Project should be accessible on port: http://localhost:5173/
+6. There are two basic test for functions which you can check in src/**tests**
+7. You can run them using the `yarn test` command.
+8. This project is good for e2e testing, but there was no requirements to do it.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Instructions:
 
-## Expanding the ESLint configuration
+Go step by step using the application. You will be prompted with the banner code
+at the end which you can copy and paste into your website.
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+-   As there was no instruction if the code that needed to be copied should be
+    iframed, scripted or similar. I provided the basic <div> wrapped code.
 
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
-
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+For any question you can contact me via email: `antonije.ljubisa@gmail.com`
